@@ -18,12 +18,13 @@ public class Chapter {
     private String demeanour;
     private String figureOfLegend;
     private String deedsOfLegend;
+    private String beliefs;
 
     public Chapter() {
 
     }
 
-    public Chapter(String name, String whyFounded, String whenFounded, String progenitor, String gsPurity, String demeanour, String figureOfLegend, String deedsOfLegend) {
+    public Chapter(String name, String whyFounded, String whenFounded, String progenitor, String gsPurity, String demeanour, String figureOfLegend, String deedsOfLegend, String beliefs) {
         this.name = name;
         this.whyFounded = whyFounded;
         this.whenFounded = whenFounded;
@@ -32,6 +33,7 @@ public class Chapter {
         this.demeanour = demeanour;
         this.figureOfLegend = figureOfLegend;
         this.deedsOfLegend = deedsOfLegend;
+        this.beliefs = beliefs;
     }
 
     public long getId() {
@@ -104,6 +106,14 @@ public class Chapter {
 
     public void setDeedsOfLegend(String deedsOfLegend) {
         this.deedsOfLegend = deedsOfLegend;
+    }
+
+    public String getBeliefs() {
+        return beliefs;
+    }
+
+    public void setBeliefs(String beliefs) {
+        this.beliefs = beliefs;
     }
 
 }

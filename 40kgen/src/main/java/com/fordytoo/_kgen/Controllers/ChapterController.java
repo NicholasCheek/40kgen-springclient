@@ -65,38 +65,6 @@ public class ChapterController {
         return Map.of("value", chapterService.getRandomDeeds());
     }
 
-    @GetMapping("/chapters/why-founded-options")
-    public List<String> getWhyFoundedOptions() {
-        return chapterService.getWhyFoundedOptions();
-    }
-
-    @GetMapping("/chapters/when-founded-options")
-    public List<String> getWhenFoundedOptions() {
-        return chapterService.getWhenFoundedOptions();
-    }
-
-    @GetMapping("/chapters/progenitor-options")
-    public List<String> getProgenitorOptions() {
-        return chapterService.getProgenitorOptions();
-    }
-
-    @GetMapping("/chapters/gspurity-options")
-    public List<String> getGspurityOptions() {
-        return chapterService.getGsPurityOptions();
-    }
-
-    @GetMapping("/chapters/demeanour-options")
-    public List<String> getDemeanourOptions() {
-        return chapterService.getDemeanourOptions();
-    }
-
-    @GetMapping("/chapters/figure-options")
-    public List<String> getFigureOfLegendOptions() {
-        return chapterService.getFigureOfLegendOptions();
-    }
-
-    @GetMapping("/chapters/deeds-options")
-    public List<String> getDeedsOfLegendOptions() {
-        return chapterService.getDeedsOfLegendOptions();
-    }
+    @GetMapping(value = "chapters/random-beliefs", produces = "application/json")
+    public Map<String, String> getRandomBeliefs() {return Map.of("value", chapterService.getRandomBeliefs());}
 }

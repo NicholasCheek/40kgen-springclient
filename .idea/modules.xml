@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/40kgen.iml" filepath="$PROJECT_DIR$/.idea/40kgen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/40kgen/40kgen.iml" filepath="$PROJECT_DIR$/40kgen/40kgen.iml" />
     </modules>
   </component>
 </project>

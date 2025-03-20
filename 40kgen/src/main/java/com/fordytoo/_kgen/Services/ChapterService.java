@@ -77,6 +77,17 @@ public class ChapterService {
             "The hero led his Chapter in many glorious campaigns, slaying hundreds of the enemy’s greatest champions. In the end, he was brought down by the Chapter's enemies, and is a reminder to all Battle Brothers of their holy duty."
     );
 
+    private final List<String> beliefsOptions = Arrays.asList(
+            "Revere the Primarch - \"Our Spiritual Liege is better than yours!\" (can reroll if lineage is unknown)",
+            "The Emperor Above All - \"Screw your spiritual liege. The big E is where it's at.\"",
+            "Honour the Ancestors - \"Old members of our Chapter are better than your guys.\"",
+            "Death Cult - \"SHUT UP YOU GUYS DON'T YOU KNOW WE'RE GOING TO DIE SOME DAY\"",
+            "Totem Creature - \"You know how we've got an animal as our Chapter symbol? Yeah, we're going to stick that everywhere.\"",
+            "Purity of Man - \"Flesh is better than bionics!\"",
+            "Steel Over Flesh - \"Bionics are better than flesh!\"",
+            "Esoteric Beliefs - You know our Chapter's beliefs? They're weird."
+    );
+
     public ChapterService(ChapterRepository chapterRepository) {
         this.chapterRepository = chapterRepository;
     }
@@ -295,6 +306,34 @@ public class ChapterService {
         }
         else {
             return deedsOfLegendOptions.get(6);
+        }
+    }
+
+    public String getRandomBeliefs() {
+        int roll = random.nextInt(100);
+        if (roll < 40) {
+            return beliefsOptions.get(0);
+        }
+        else if (roll < 65) {
+            return beliefsOptions.get(1);
+        }
+        else if (roll < 75) {
+            return beliefsOptions.get(2);
+        }
+        else if (roll < 80) {
+            return beliefsOptions.get(3);
+        }
+        else if (roll < 85) {
+            return beliefsOptions.get(4);
+        }
+        else if (roll < 90) {
+            return beliefsOptions.get(5);
+        }
+        else if (roll < 95) {
+            return beliefsOptions.get(6);
+        }
+        else {
+            return beliefsOptions.get(7);
         }
     }
 }
