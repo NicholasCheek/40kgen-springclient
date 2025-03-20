@@ -25,6 +25,7 @@ public class Planet {
     private String terrains;
     private String population;
     private String society;
+    @Column(length = 1000)
     private String defences;
 
     public Planet() {
