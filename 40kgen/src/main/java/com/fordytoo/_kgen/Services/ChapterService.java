@@ -92,34 +92,6 @@ public class ChapterService {
         this.chapterRepository = chapterRepository;
     }
 
-    public List<String> getWhyFoundedOptions() {
-        return whyFoundedOptions;
-    }
-
-    public List<String> getWhenFoundedOptions() {
-        return whenFoundedOptions;
-    }
-
-    public List<String> getProgenitorOptions() {
-        return progenitorOptions;
-    }
-
-    public List<String> getGsPurityOptions() {
-        return gsPurityOptions;
-    }
-
-    public List<String> getDemeanourOptions() {
-        return demeanourOptions;
-    }
-
-    public List<String> getFigureOfLegendOptions() {
-        return figureOfLegendOptions;
-    }
-
-    public List<String> getDeedsOfLegendOptions() {
-        return deedsOfLegendOptions;
-    }
-
     public String getRandomWhyFounded() {
         int roll = random.nextInt(10);
         if (roll < 4) {
