@@ -215,8 +215,9 @@ public class OrderService {
             return saintDeedOptions.get(3);
         }
         else {
-            return saintDeedOptions.get(roll);
+            return saintDeedOptions.get(4);
         }
+
     }
 
     public String getRandomHomeworld() {
